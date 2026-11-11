@@ -87,9 +87,10 @@ repo under `/.kiro/` (committed, not gitignored, per the rules):
 
 ## What-to-submit checklist (mapped to the rules)
 
-- [ ] **GitHub repo public** with all source + instructions (this repo).
-- [ ] **Open-source license file** at repo root, detectable in the About
-      section - MIT `LICENSE` is in place.
+- [x] **GitHub repo public** with all source + instructions:
+      https://github.com/mallyagirish/kubemend (published 2026-11-11).
+- [x] **Open-source license file** at repo root, detectable in the About
+      section - MIT `LICENSE` is in place (verified via GitHub API).
 - [ ] **`/.kiro` directory at repo root**, committed, NOT in `.gitignore` -
       in place (specs, steering, hooks). Double-check `.gitignore` after
       publishing: it ignores Python artifacts only.
@@ -98,10 +99,12 @@ repo under `/.kiro/` (committed, not gitignored, per the rules):
       `apps/kubemend-report/`).
 - [ ] **Text description** - the Description above.
 - [ ] **Kiro usage write-up** - the section above (also in the README).
-- [ ] **Demo video < 3 minutes, public on YouTube**, showing the project
-      running: script = run `./demo.sh` (scan -> explain -> --write ->
-      rescan -> report), then 20 seconds on the `.kiro/` folder. TODO:
-      record and upload; judges are not required to watch past 3:00.
+- [x] **Demo video < 3 minutes, public on YouTube**, showing the project
+      running: https://youtu.be/6NNdYAMbQNI (1:27, published 2026-11-11;
+      narrated version — voiceover walkthrough of demo.sh: scan -> explain
+      -> --write -> rescan -> report, plus the `.kiro/` folder. Replaced
+      the original silent upload on 2026-11-11 at Girish's choice; the
+      old youtu.be/a3rQq3h3dDY video was deleted).
 - [ ] **Project built during the Submission Period** (Oct 30 - Dec 4,
       2026) and new - yes; built Nov 2026.
 - [ ] **Testing access:** repo is public and self-contained; judges can
