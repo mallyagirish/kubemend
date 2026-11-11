@@ -1,0 +1,16 @@
+{
+  "enabled": true,
+  "name": "Run rule tests when a rule file is saved",
+  "description": "Rules are the heart of KubeMend. When a file under engine/kubemend_engine/rules/ changes, run the rule test suite right away so a broken check or fix is caught in the same edit session, not at release time.",
+  "version": "1",
+  "when": {
+    "type": "fileEdited",
+    "patterns": [
+      "engine/kubemend_engine/rules/*.py"
+    ]
+  },
+  "then": {
+    "type": "runCommand",
+    "command": "python -m pytest tests/test_rules.py -q"
+  }
+}

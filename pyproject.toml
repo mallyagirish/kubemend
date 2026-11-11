@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "kubemend"
+version = "0.1.0"
+description = "Scan Kubernetes YAML for hardening mistakes and generate the fixes as reviewable patches."
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.11"
+dependencies = ["PyYAML>=6.0"]
+
+[project.scripts]
+kubemend = "kubemend.cli:main"
+kubemend-report = "kubemend_report.report:main"
+
+[tool.setuptools.packages.find]
+where = ["engine", "apps/kubemend-cli", "apps/kubemend-report"]
+include = ["kubemend*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
