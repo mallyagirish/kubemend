@@ -110,8 +110,15 @@ repo under `/.kiro/` (committed, not gitignored, per the rules):
 - [ ] **Testing access:** repo is public and self-contained; judges can
       `pip install -e .` and run `./demo.sh` or `python -m kubemend scan
       examples/vulnerable-app.yaml`. No credentials needed.
-- [ ] **Register + submit** on kiroween.devpost.com before Dec 4, 2026,
-      2:00 pm PT. Solo entry (teams up to 3 allowed).
+- [x] **Register + submit** on kiroween.devpost.com before Dec 4, 2026,
+      2:00 pm PT. Solo entry (teams up to 3 allowed). **SUBMITTED
+      2026-11-11: https://devpost.com/software/kubemend** (green SUBMITTED
+      badge; editable until the deadline). Route there was bumpy:
+      Cloudflare Turnstile blocked the registration page in the automated
+      browser, so Girish registered in his own browser and created the
+      project shell there (reCAPTCHA), then Muse filled and submitted
+      from the cloud session. No Kiro user ID field appeared in the
+      Devpost flow — the ID is only for the separate credits form.
 - [ ] Optional: request the 4,000 Kiro credits via the Credit Request Form
       **by Dec 1, 2026, 12:00 pm PT** (needs Kiro user ID / AWS account ID).
 - [ ] Optional bonus: publish the build blog post (must mention Kiroween
